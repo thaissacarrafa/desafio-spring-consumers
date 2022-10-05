@@ -1,0 +1,15 @@
+[{
+  "consumerId": 1,
+  "name": "Thaíssa Carrafa",
+  "cpf": "12345676810",
+  "address": {
+    "cep": "29119055",
+    "road": "Avenida Hugo Musso",
+    "complement": "Ed. Dionizio Ruy",
+    "district": "Vila Velha",
+    "state": "ES",
+    "uf": "Brasil"
+  },
+  "level": 6
+
+}]
