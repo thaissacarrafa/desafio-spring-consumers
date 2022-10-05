@@ -1,5 +1,8 @@
-package controller;
+package com.meli.desafiospringconsumers.controller;
 
+import com.meli.desafiospringconsumers.dto.ConsumerDTO;
+import com.meli.desafiospringconsumers.model.Consumer;
+import com.meli.desafiospringconsumers.service.IConsumer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 
+import java.util.List;
 
 
 @Controller
@@ -17,16 +21,16 @@ import org.springframework.stereotype.Controller;
 public class ConsumerController {
 
     @Autowired
-    private IProduct service;
+    private IConsumer service;
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public void save(@RequestBody Product product) {
-        service.save(product);
+    public void save(@RequestBody Consumer consumer) {
+        service.save(consumer);
     }
 
     @GetMapping
-    public ResponseEntity<List<ProductDTO>> getAll() {
+    public ResponseEntity<List<ConsumerDTO>> getAll() {
         return new ResponseEntity<>(service.getAll(), HttpStatus.OK);
     }
 }
