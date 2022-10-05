@@ -16,8 +16,8 @@ public class ConsumerService implements IConsumer {
     private ConsumerRepo repository;
 
     @Override
-    public void save(Consumer consumer) {
-        repository.saveConsumer(consumer);
+    public void save(Consumer consumers) {
+        repository.saveConsumer(consumers);
     }
 
     @Override

@@ -6,11 +6,13 @@ import lombok.Setter;
 
 @Getter
 @Setter
-@JsonInclude(JsonInclude.Include.NON_NULL)
 public class Address {
     private String cep;
     private String road;
+
+    @JsonInclude(JsonInclude.Include.NON_NULL)
     private String complement;
+
     private String district;
     private String state;
     private String uf;

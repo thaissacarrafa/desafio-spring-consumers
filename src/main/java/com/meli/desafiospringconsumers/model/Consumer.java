@@ -6,7 +6,7 @@ import lombok.Data;
 public class Consumer {
     private int consumerId;
     private String name;
+    private int level;
     private Integer cpf;
     private Address address;
-    private int level;
 }
