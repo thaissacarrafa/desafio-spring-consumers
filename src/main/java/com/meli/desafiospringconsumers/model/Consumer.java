@@ -1,4 +1,4 @@
-package model;
+package com.meli.desafiospringconsumers.model;
 
 import lombok.Data;
 
